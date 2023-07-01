@@ -4,9 +4,8 @@ import React from 'react'
 
 import './team.styles.scss'
 
-type Props = {}
 
-const Team = (props: Props) => {
+const Team = () => {
     return (
         <div id="team" className="container">
             <hgroup className='content'>
