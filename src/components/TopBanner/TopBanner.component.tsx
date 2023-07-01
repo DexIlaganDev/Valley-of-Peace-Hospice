@@ -4,6 +4,7 @@ import { BiSolidPhoneCall } from 'react-icons/bi';
 import { MdEmail } from 'react-icons/md';
 import TopBannerIconText from './TopBannerIconText';
 
+import globalData from '@/data/global';
 
 type Props = {
   toggleModal : () => void
@@ -12,6 +13,16 @@ type Props = {
 const TopBanner = ({toggleModal} : Props) => {
   return (
     <div className='topBanner'>
+      <div className='upper'>
+        <div className="container">
+          
+        <TopBannerIconText 
+            icon={<BiSolidPhoneCall /> }
+            text={ <div style={styles.fs}>We're here for you <strong>24/7</strong> &nbsp; including weekends and holidays: <strong>{globalData.phoneNumber}</strong></div> }
+          />
+
+        </div>
+      </div>
         <div className="container topBanner__container">
 
           <div className='logo-wrap'>

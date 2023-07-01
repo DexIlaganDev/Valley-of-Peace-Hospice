@@ -6,6 +6,8 @@ import { MdEmail } from 'react-icons/md';
 
 import './footer.styles.scss'
 
+import globalData from '@/data/global';
+
 
 const Footer = () => {
     return (
@@ -37,7 +39,7 @@ const Footer = () => {
 
                             <hgroup>
                                 <h5><BiSolidPhoneCall /> &nbsp; Contact #</h5>
-                                <p>(818) 528-5333</p>
+                                <p>{globalData.phoneNumber}</p>
                             </hgroup>
 
                             
