@@ -1,0 +1,13 @@
+.section-wrapper {
+
+    padding-block : 3rem;
+    margin-bottom: 0;
+
+    &.bg-false {
+
+    }
+
+    &.bg-true {
+        background-color : var(--bg-alt);
+    }
+}

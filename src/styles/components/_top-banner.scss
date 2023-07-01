@@ -1,0 +1,101 @@
+.topBanner {
+
+    &__container {
+        
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-block: 1em;
+        gap: 1rem;
+        // background-image: url('/images/elements/menu-centre-tile.jpg');
+
+
+        justify-content: space-between;
+
+        @include min-md {
+            justify-content: flex-start;
+        }
+        
+        .logo-wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+
+            @include min-md {
+                justify-content: flex-start;
+            }
+        }
+
+        .navlinks {
+            color : #fff;
+
+            ul {
+                display:none;
+                @include min-md {
+                    display:flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                }
+                
+                li {
+                    list-style-type: none;
+                    > a {
+                        color : #fff;
+                    }
+                }
+            }
+
+            @include min-md {
+                margin-left: auto;
+            }
+        }
+
+        img {
+            max-width: 56px;
+            display: block;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 100%;
+            padding-block: 0.6em;
+            
+
+
+            @include min-md {
+                max-width: 115px;
+                padding-block: 1.5em;
+            }
+
+        }
+        hgroup {
+
+            margin-bottom: 0;
+            
+            > :first-child {
+                font-size : 18px;
+                font-weight: bold;
+                font-family : var(--font-family);
+                letter-spacing: 1px;
+                color : #fff;
+
+                @include min-md {
+                    font-size : 28px;
+                }
+            }
+
+            > :nth-child(2) {
+                font-size: 19px;
+                color : #fff;
+
+                @include min-md {
+                    font-size : 25px;
+                }
+            }
+
+        }
+        
+    }
+}
+
+

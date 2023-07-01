@@ -1,0 +1,81 @@
+@import '@/styles/base/breakpoints';
+
+.hero-section {
+
+    @include min-md {
+        padding-block : 4rem;
+    }
+
+    .heading-main {
+        font-family: var(--font-family);
+    }
+
+}
+
+.heart-grid {
+
+    text-align: right;
+
+    // background-image:url('/images/elements/blob-hero.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    
+
+    > div {
+        background-color: #fff;
+        padding: .5rem;
+
+        @include min-md {
+            margin-left: auto;
+        }
+       
+
+        img {
+
+            // border-radius: 200px 200px 10px 10px;
+            box-shadow: 37px 56px 68px -62px #826C5F;
+        
+            @include min-sm {
+                margin-left : auto
+            }
+        }
+
+    }
+
+
+    
+    
+    
+
+}
+
+
+.hero-layout {
+
+    hgroup {
+        position:relative;
+
+        h2 {
+            text-align: center;
+            @include min-md {
+                text-align: left;
+            }
+        }
+        
+        
+
+        &:after{
+            content : "";
+            position: absolute;
+            width:100%;
+            max-width: 150px;
+            background-image: url('/images/elements/underline-purple.png');
+            height: 25px;
+            background-size:cover;
+            left:0px;
+        }
+    }
+
+}

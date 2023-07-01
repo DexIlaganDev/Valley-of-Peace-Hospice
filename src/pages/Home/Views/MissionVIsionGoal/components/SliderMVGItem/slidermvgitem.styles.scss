@@ -1,0 +1,35 @@
+.slidermvgheadings {
+
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    padding: 3rem;
+    display:grid;
+
+    &.headings>* {
+        font-weight: normal;
+        font-size : 24px;
+
+        color : #555555;
+    }
+
+    &.headings>:last-child {
+        order :1;
+        color : var(--secondary);
+        font-weight : bold;
+        margin-bottom : 1rem;
+        font-size: 1.2rem;
+        position:relative;
+
+        &:after{
+            content : "";
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    &.headings>:first-child {
+        order :2;
+        
+    }
+}

@@ -1,0 +1,64 @@
+@import '@/styles/base/breakpoints';
+
+.mvg__wrapper {
+
+    background-image: url('/images/elements/header-bg1.png');
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    margin-bottom:0;
+    padding-block : 5rem 1.5rem;
+    background-color: #fbf4f6;
+
+    @include min-md {
+        padding-block : 10rem 5rem;
+    }
+
+    hgroup  {
+
+        > :first-child {
+           color : #98709F;
+           
+            img {
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    article {
+
+        @include min-md {
+            font-size : 20px;
+        }
+    }
+
+}
+.mvg-grid {
+
+    align-items : center;
+}
+
+.mvg-grid-photos {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap : 1rem;
+
+    img {
+        max-width:250px;
+        margin-inline:auto;
+        display: block;
+
+        @include min-md {
+            max-width: initial
+        }
+    }
+
+    @include min-md {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}

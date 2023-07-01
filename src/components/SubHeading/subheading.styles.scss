@@ -1,0 +1,13 @@
+@import '@/styles/base/breakpoints';
+
+hgroup>:last-child.subheading {
+    
+    font-family: var(--font-family);
+    font-weight: 400;
+    margin-top: 1.5rem;
+
+    @include min-md {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

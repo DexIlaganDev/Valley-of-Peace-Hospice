@@ -1,0 +1,27 @@
+.img-logo {
+    width: 100%;
+    max-width: 110px;
+    @include min-md {
+        max-width: 190px;
+    }
+    
+    
+}
+
+.nav-links ul li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-links {
+
+    ul:nth-of-type(2) {
+        display:none;
+        gap: 1rem;
+
+        @include min-md {
+            display: flex;
+        }
+    }
+
+}

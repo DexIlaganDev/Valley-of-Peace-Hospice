@@ -1,0 +1,112 @@
+@import '@/styles/base/breakpoints';
+
+.footer{
+
+    h1,h2,h3,h4,h5 {
+        font-family : var(--font-family);
+    }
+
+    margin-top: -2rem;
+
+    @include min-md {
+        margin-top : initial;
+
+        padding-top: 3rem;
+    }
+
+    .flex {
+
+        @include min-md {
+            display: flex;
+            flex-direction : row;
+        }
+
+         > div {
+            flex : 1;
+         }
+
+    }
+
+    .flex .grid-logo {
+
+        img {
+            max-width: 200px;
+        }
+
+        order : 3;
+        text-align: center;
+
+        @include min-md {
+            order : 1;
+            text-align: left;
+            flex: .6;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .flex .grid-contact-info {
+
+        order : 1;
+        @include min-md {
+            order : 2;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        
+        .contact-info {
+            @include min-lg {
+                gap : 1.5rem;
+                display : grid;
+                grid-template-columns: auto auto;
+    
+            }
+    
+        }
+
+        hgroup {
+            
+            @include min-md {
+                margin-bottom : 0;
+            }
+        }
+
+    }
+
+
+    .flex .grid-approval {
+        order : 2;
+        @include min-md {
+            order : 3;
+
+            max-width: 125px;
+        }
+
+        img {
+            max-width: 170px;
+            margin-inline: auto;
+            display: block;
+        }
+
+    }
+
+    .copyright {
+        text-align: center;
+        padding-block: 1rem;
+        font-size: 12px;
+        border-top: 1px solid var(--accent);
+        background-color: var(--clr-purple-400);
+        margin-top:1rem;
+        color : #fff;
+    }
+
+
+    
+
+}

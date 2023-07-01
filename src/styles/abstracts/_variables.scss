@@ -1,0 +1,35 @@
+:root {
+    
+}
+
+/* Pink Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+
+    --primary-hover: var(--accent-2);
+    --primary-focus: rgba(216, 27, 96, 0.125);
+    --primary-inverse: #FFF;
+
+    --primary : var(--clr-black-400);
+    --secondary : #E55758;
+    --accent : #081251;
+    --accent-2 : #D2A6AB;
+
+
+    --clr-white-400 : #ffffff;
+    --clr-black-400 : #000000;
+    --clr-black-300 : #555555;
+    --clr-purple-400 : #a4508b;
+
+
+    --font-family : 'Gilda Display', serif;
+    --font-family-serif : 'La Belle Aurore', cursive;
+    --font-family-cursive : 'Great Vibes', cursive;
+
+    // bg
+    --bg-alt : #fbf4f6;
+
+    // sizes
+    --font-size : 14px;
+}
