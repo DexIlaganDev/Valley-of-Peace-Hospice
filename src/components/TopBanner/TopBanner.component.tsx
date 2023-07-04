@@ -53,6 +53,6 @@ export default TopBanner
 
 const styles = {
   fs : {
-    fontSize : '12px'
+    fontSize : '16px'
   }
 }
